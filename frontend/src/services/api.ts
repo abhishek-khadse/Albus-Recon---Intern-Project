@@ -1,6 +1,6 @@
 import axios, { AxiosResponse, AxiosRequestConfig } from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://albus-recon-intern-project.onrender.com/api';
 
 // API response types
 export interface SubdomainResult {
