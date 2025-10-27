@@ -1,6 +1,7 @@
 import axios, { AxiosResponse, AxiosRequestConfig } from 'axios';
 
-const API_URL = 'https://albus-recon-intern-project.onrender.com/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_BASE = `${API_URL}/api`;
 
 // API response types
 export interface SubdomainResult {
@@ -45,7 +46,7 @@ export interface ReconResult {
 
 // Create axios instance
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: API_BASE,
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',

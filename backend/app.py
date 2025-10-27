@@ -290,12 +290,23 @@ def make_request(
 Base.metadata.create_all(bind=engine)
 
 # Routes
-@app.route("/api/recon", methods=["POST"])
+@app.route('/')
+def home():
+    return jsonify({
+        "message": "✅ Albus Recon Backend is running successfully!",
+        "status": "OK",
+        "developer": "Abhishek Khadse",
+        "usage": "Use /api endpoints from the frontend.",
+        "documentation": "https://github.com/abhishek-khadse/Albus-Recon---Intern-Project"
+    })
+
+@app.route('/api/recon', methods=['POST'])
 def create_recon():
     """Create a new URL scan."""
     db = None
     try:
         # Try to get JSON data
+{{ ... }}
         data = request.get_json()
         
         # If no JSON data, try form data
