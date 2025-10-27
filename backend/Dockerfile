@@ -13,12 +13,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of your backend files
 COPY . .
 
-# Expose Render’s dynamic port
-EXPOSE 10000
+# Expose the Render port (Render uses PORT env var)
+EXPOSE 5000
 
 # Environment configuration
 ENV PYTHONUNBUFFERED=1
-ENV FLASK_APP=app.py
+ENV PORT=5000
 
-# Run Flask using the dynamic port assigned by Render
-CMD ["python", "app.py"]
+# Run Flask app with Gunicorn for production
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
