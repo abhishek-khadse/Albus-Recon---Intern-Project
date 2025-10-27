@@ -48,22 +48,8 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 # Configure CORS
-CORS(app, 
-     resources={
-         r"/*": {
-             "origins": ["http://localhost:3000", "http://127.0.0.1:3000", "https://albus-recon-intern-project-frontend-ntxz.onrender.com"],
-             "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-             "allow_headers": ["Content-Type", "Authorization"],
-             "supports_credentials": True,
-             "expose_headers": ["Content-Type", "Authorization"]
-         }
-     },
-     supports_credentials=True
-)
-
-# Enable CORS for all routes under /api
 CORS(app, resources={
-    r"/api/*": {
+    r"/*": {
         "origins": [
             "http://localhost:3000",
             "http://localhost:3001",
@@ -73,11 +59,30 @@ CORS(app, resources={
         ],
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
-        "expose_headers": ["Content-Type", "Authorization"],
         "supports_credentials": True,
-        "max_age": 3600
+        "expose_headers": ["Content-Type", "Authorization"]
     }
 })
+
+# Test endpoint for CORS
+@app.route('/api/tools/subdomains')
+def subdomains():
+    domain = request.args.get('domain')
+    if not domain:
+        return jsonify({"error": "Domain parameter is required"}), 400
+    
+    # This is a test response - replace with actual subdomain lookup
+    test_subdomains = [
+        f"www.{domain}",
+        f"mail.{domain}",
+        f"dev.{domain}"
+    ]
+    
+    return jsonify({
+        "domain": domain,
+        "subdomains": test_subdomains,
+        "timestamp": datetime.utcnow().isoformat()
+    })
 
 # Ensure upload directory exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
