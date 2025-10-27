@@ -51,7 +51,7 @@ app.config.from_object(Config)
 CORS(app, 
      resources={
          r"/*": {
-             "origins": ["http://localhost:3000", "http://127.0.0.1:3000"],
+             "origins": ["http://localhost:3000", "http://127.0.0.1:3000", "https://albus-recon-intern-project-frontend-ntxz.onrender.com"],
              "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
              "allow_headers": ["Content-Type", "Authorization"],
              "supports_credentials": True,
@@ -68,7 +68,8 @@ CORS(app, resources={
             "http://localhost:3000",
             "http://localhost:3001",
             "https://albus-recon-frontend.onrender.com",
-            "https://albus-recon-intern-project.onrender.com"
+            "https://albus-recon-intern-project.onrender.com",
+            "https://albus-recon-intern-project-frontend-ntxz.onrender.com"
         ],
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
