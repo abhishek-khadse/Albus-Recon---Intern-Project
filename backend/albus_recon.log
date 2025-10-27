@@ -327,3 +327,13 @@
 2025-10-27 05:23:12,531 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 05:23:12] "POST /api/tools/port-scan HTTP/1.1" 200 -
 2025-10-27 05:23:16,260 - __main__ - INFO - GET https://web.whatsapp.com/ - 200
 2025-10-27 05:23:16,265 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 05:23:16] "GET /api/tech-detect?url=https://web.whatsapp.com/ HTTP/1.1" 200 -
+2025-10-27 06:16:34,078 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-10-27 06:16:34,079 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-27 06:16:34,080 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:16:34,697 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:16:34,699 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:16:43,655 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 06:16:43] "GET / HTTP/1.1" 200 -
+2025-10-27 06:16:44,473 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 06:16:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

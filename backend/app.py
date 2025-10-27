@@ -306,7 +306,6 @@ def create_recon():
     db = None
     try:
         # Try to get JSON data
-{{ ... }}
         data = request.get_json()
         
         # If no JSON data, try form data
