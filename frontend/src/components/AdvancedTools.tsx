@@ -71,23 +71,6 @@ const AdvancedTools: React.FC = () => {
     }
   };
 
-  const exportToCsv = async () => {
-    try {
-      const blob = await reconApi.exportToCsv();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'recon_results.csv';
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      a.remove();
-    } catch (err) {
-      setError('Failed to export data');
-      console.error(err);
-    }
-  };
-
   return (
     <div className="advanced-tools p-4 max-w-6xl mx-auto">
       <h1 className="text-2xl font-bold mb-6">Advanced Reconnaissance Tools</h1>
@@ -110,12 +93,6 @@ const AdvancedTools: React.FC = () => {
           onClick={() => setActiveTab('tech')}
         >
           Tech Detection
-        </button>
-        <button
-          className="ml-auto px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          onClick={exportToCsv}
-        >
-          Export to CSV
         </button>
       </div>
 

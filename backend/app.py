@@ -47,24 +47,39 @@ class Config:
 app = Flask(__name__)
 app.config.from_object(Config)
 
+# Configure CORS
+CORS(app, 
+     resources={
+         r"/*": {
+             "origins": ["http://localhost:3000", "http://127.0.0.1:3000"],
+             "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+             "allow_headers": ["Content-Type", "Authorization"],
+             "supports_credentials": True,
+             "expose_headers": ["Content-Type", "Authorization"]
+         }
+     },
+     supports_credentials=True
+)
+
+# Enable CORS for all routes under /api
+CORS(app, resources={
+    r"/api/*": {
+        "origins": [
+            "http://localhost:3000",
+            "http://localhost:3001",
+            "https://albus-recon-frontend.onrender.com",
+            "https://albus-recon-intern-project.onrender.com"
+        ],
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
+        "expose_headers": ["Content-Type", "Authorization"],
+        "supports_credentials": True,
+        "max_age": 3600
+    }
+})
+
 # Ensure upload directory exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-
-# Enable CORS with specific settings
-cors = CORS()
-cors.init_app(
-    app,
-    resources={
-        r"/api/*": {
-            "origins": ["http://localhost:3000", "http://127.0.0.1:3000"],
-            "methods": ["GET", "POST", "OPTIONS", "PUT", "DELETE"],
-            "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
-            "supports_credentials": True,
-            "expose_headers": ["Content-Type", "Authorization"],
-            "max_age": 3600,
-        }
-    },
-)
 
 # Database setup - SQLAlchemy 2.0 compatible
 engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
@@ -1044,41 +1059,6 @@ def tech_detect():
             'url': url,
             'recommendation': 'Please try again later or check if the URL is correct.'
         }), 500
-
-@app.route("/api/export/csv")
-def export_csv():
-    """Export scan results to CSV."""
-    db = sessionmaker(bind=engine)()
-    try:
-        results = db.query(ReconResult).all()
-        
-        # Convert results to list of dicts
-        data = [{
-            'id': r.id,
-            'url': r.url,
-            'status_code': r.status_code,
-            'title': r.title,
-            'fetched_at': r.fetched_at.isoformat() if r.fetched_at else ''
-        } for r in results]
-        
-        # Create CSV in memory
-        si = io.StringIO()
-        if data:
-            fieldnames = data[0].keys()
-            writer = csv.DictWriter(si, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(data)
-        
-        # Create response with CSV
-        output = make_response(si.getvalue())
-        output.headers["Content-Disposition"] = "attachment; filename=scan_results.csv"
-        output.headers["Content-type"] = "text/csv"
-        return output
-        
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-    finally:
-        db.close(), 200
 
 if __name__ == "__main__":
     # Create database tables if they don't exist

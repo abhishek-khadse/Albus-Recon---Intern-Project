@@ -337,3 +337,161 @@
 2025-10-27 06:16:34,699 - werkzeug - INFO -  * Debugger PIN: 790-349-706
 2025-10-27 06:16:43,655 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 06:16:43] "GET / HTTP/1.1" 200 -
 2025-10-27 06:16:44,473 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 06:16:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-27 06:34:50,845 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 06:34:51,116 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:34:53,500 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:34:53,505 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:35:59,316 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\.venv\\Lib\\site-packages\\sqlalchemy\\pool\\__init__.py', reloading
+2025-10-27 06:35:59,399 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:36:01,110 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:36:01,111 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:36:12,214 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\.venv\\Lib\\site-packages\\sqlalchemy\\orm\\events.py', reloading
+2025-10-27 06:36:12,331 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:39:18,591 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-10-27 06:39:18,592 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-27 06:39:18,593 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:39:19,175 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:39:19,176 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:42:42,313 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 06:42:42,445 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:42:43,661 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:42:43,663 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:47:16,977 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 06:47:17,237 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:47:18,897 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:47:18,902 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:47:52,210 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 06:47:52,300 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:47:52,912 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:47:52,913 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:48:04,140 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 06:48:04,263 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:48:05,341 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:48:05,345 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:50:11,131 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 06:50:11,233 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:50:11,925 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:50:11,927 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:51:16,636 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 06:51:16,804 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:51:18,032 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:51:18,036 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:52:34,895 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 06:52:35,027 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:53:15,746 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-10-27 06:53:15,747 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-27 06:53:15,748 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 06:53:16,323 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 06:53:16,325 - werkzeug - INFO -  * Debugger PIN: 790-349-706
+2025-10-27 06:53:26,953 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 06:53:26] "GET / HTTP/1.1" 200 -
+2025-10-27 07:03:58,068 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2025-10-27 07:03:58,068 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-27 07:03:58,069 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 07:03:58,694 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 07:03:58,696 - werkzeug - INFO -  * Debugger PIN: 347-075-910
+2025-10-27 07:04:03,734 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:04:03] "GET / HTTP/1.1" 200 -
+2025-10-27 07:05:34,179 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:05:34] "GET / HTTP/1.1" 200 -
+2025-10-27 07:05:34,198 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:05:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-27 07:05:34,443 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:05:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-27 07:06:00,653 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:06:00] "OPTIONS /api/recon HTTP/1.1" 200 -
+2025-10-27 07:06:00,655 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:06:00] "OPTIONS /api/recon HTTP/1.1" 200 -
+2025-10-27 07:06:00,900 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:06:00] "OPTIONS /api/recon HTTP/1.1" 200 -
+2025-10-27 07:06:00,902 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:06:00] "OPTIONS /api/recon HTTP/1.1" 200 -
+2025-10-27 07:06:38,353 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 07:06:38,878 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 07:06:42,291 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 07:06:42,298 - werkzeug - INFO -  * Debugger PIN: 347-075-910
+2025-10-27 07:06:53,312 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:06:53] "OPTIONS /api/recon HTTP/1.1" 200 -
+2025-10-27 07:07:08,748 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:07:08] "OPTIONS /api/recon HTTP/1.1" 200 -
+2025-10-27 07:07:09,054 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:07:09] "OPTIONS /api/recon HTTP/1.1" 200 -
+2025-10-27 07:07:27,921 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 07:07:28,019 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 07:07:28,655 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 07:07:28,657 - werkzeug - INFO -  * Debugger PIN: 347-075-910
+2025-10-27 07:07:34,324 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:07:34] "GET /api/recon HTTP/1.1" 200 -
+2025-10-27 07:08:11,048 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:11] "GET /api/recon HTTP/1.1" 200 -
+2025-10-27 07:08:11,358 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:11] "GET /api/recon HTTP/1.1" 200 -
+2025-10-27 07:08:30,621 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:30] "OPTIONS /api/recon HTTP/1.1" 200 -
+2025-10-27 07:08:31,895 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:31] "[35m[1mPOST /api/recon HTTP/1.1[0m" 201 -
+2025-10-27 07:08:32,208 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:32] "GET /api/recon HTTP/1.1" 200 -
+2025-10-27 07:08:35,316 - __main__ - INFO - [SUBDOMAINS] Looking up subdomains for dashboard.render.com
+2025-10-27 07:08:36,066 - __main__ - INFO - GET https://otx.alienvault.com/api/v1/indicators/domain/dashboard.render.com/passive_dns - 429
+2025-10-27 07:08:44,839 - __main__ - INFO - GET https://crt.sh/?q=%25.dashboard.render.com&output=json - 200
+2025-10-27 07:08:44,841 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:44] "GET /api/tools/subdomains?domain=https://dashboard.render.com/ HTTP/1.1" 200 -
+2025-10-27 07:08:49,414 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:49] "OPTIONS /api/tools/port-scan HTTP/1.1" 200 -
+2025-10-27 07:08:49,730 - __main__ - WARNING - Error scanning port 21: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,732 - __main__ - WARNING - Error scanning port 22: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,732 - __main__ - WARNING - Error scanning port 23: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,733 - __main__ - WARNING - Error scanning port 25: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,733 - __main__ - WARNING - Error scanning port 53: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,733 - __main__ - WARNING - Error scanning port 80: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,733 - __main__ - WARNING - Error scanning port 110: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,733 - __main__ - WARNING - Error scanning port 111: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,733 - __main__ - WARNING - Error scanning port 135: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,734 - __main__ - WARNING - Error scanning port 139: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,734 - __main__ - WARNING - Error scanning port 143: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,734 - __main__ - WARNING - Error scanning port 443: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,734 - __main__ - WARNING - Error scanning port 445: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,734 - __main__ - WARNING - Error scanning port 993: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,735 - __main__ - WARNING - Error scanning port 995: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,735 - __main__ - WARNING - Error scanning port 1723: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,736 - __main__ - WARNING - Error scanning port 3306: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,739 - __main__ - WARNING - Error scanning port 3389: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,741 - __main__ - WARNING - Error scanning port 5900: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,743 - __main__ - WARNING - Error scanning port 8080: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,743 - __main__ - WARNING - Error scanning port 8443: [Errno 11001] getaddrinfo failed
+2025-10-27 07:08:49,762 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:49] "POST /api/tools/port-scan HTTP/1.1" 200 -
+2025-10-27 07:08:56,364 - __main__ - INFO - GET https://dashboard.render.com/ - 200
+2025-10-27 07:08:56,366 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:08:56] "GET /api/tech-detect?url=https://dashboard.render.com/ HTTP/1.1" 200 -
+2025-10-27 07:09:09,060 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:09:09] "[35m[1mGET /api/export/csv HTTP/1.1[0m" 500 -
+2025-10-27 07:10:15,294 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:10:15] "GET /api/recon HTTP/1.1" 200 -
+2025-10-27 07:10:25,275 - werkzeug - INFO -  * Detected change in 'C:\\Users\\abhis\\Desktop\\EXAM\\Albus_Recon\\backend\\app.py', reloading
+2025-10-27 07:10:25,403 - werkzeug - INFO -  * Restarting with stat
+2025-10-27 07:10:26,756 - werkzeug - WARNING -  * Debugger is active!
+2025-10-27 07:10:26,761 - werkzeug - INFO -  * Debugger PIN: 347-075-910
+2025-10-27 07:11:31,000 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:11:31] "GET /api/recon HTTP/1.1" 200 -
+2025-10-27 07:11:31,262 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:11:31] "GET /api/recon HTTP/1.1" 200 -
+2025-10-27 07:11:42,087 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:11:42] "[31m[1mPOST /api/recon HTTP/1.1[0m" 400 -
+2025-10-27 07:11:53,098 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:11:53] "[35m[1mPOST /api/recon HTTP/1.1[0m" 201 -
+2025-10-27 07:11:53,105 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:11:53] "GET /api/recon HTTP/1.1" 200 -
+2025-10-27 07:11:57,487 - __main__ - INFO - [SUBDOMAINS] Looking up subdomains for render.com
+2025-10-27 07:11:58,148 - __main__ - INFO - GET https://otx.alienvault.com/api/v1/indicators/domain/render.com/passive_dns - 429
+2025-10-27 07:12:13,999 - __main__ - ERROR - Request to https://crt.sh/?q=%25.render.com&output=json timed out after 15 seconds
+2025-10-27 07:12:14,001 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:12:14] "GET /api/tools/subdomains?domain=render.com HTTP/1.1" 200 -
+2025-10-27 07:12:22,863 - __main__ - INFO - [SUBDOMAINS] Looking up subdomains for course.acciojob.com
+2025-10-27 07:12:23,615 - __main__ - INFO - GET https://otx.alienvault.com/api/v1/indicators/domain/course.acciojob.com/passive_dns - 429
+2025-10-27 07:12:25,278 - __main__ - INFO - GET https://crt.sh/?q=%25.course.acciojob.com&output=json - 200
+2025-10-27 07:12:25,281 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:12:25] "GET /api/tools/subdomains?domain=https://course.acciojob.com/ HTTP/1.1" 200 -
+2025-10-27 07:12:31,502 - __main__ - WARNING - Error scanning port 21: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,502 - __main__ - WARNING - Error scanning port 22: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,502 - __main__ - WARNING - Error scanning port 23: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,503 - __main__ - WARNING - Error scanning port 25: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,503 - __main__ - WARNING - Error scanning port 53: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,503 - __main__ - WARNING - Error scanning port 80: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,503 - __main__ - WARNING - Error scanning port 110: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,503 - __main__ - WARNING - Error scanning port 111: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,503 - __main__ - WARNING - Error scanning port 135: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,504 - __main__ - WARNING - Error scanning port 139: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,504 - __main__ - WARNING - Error scanning port 143: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,504 - __main__ - WARNING - Error scanning port 443: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,504 - __main__ - WARNING - Error scanning port 445: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,505 - __main__ - WARNING - Error scanning port 993: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,505 - __main__ - WARNING - Error scanning port 995: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,505 - __main__ - WARNING - Error scanning port 1723: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,505 - __main__ - WARNING - Error scanning port 3306: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,505 - __main__ - WARNING - Error scanning port 3389: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,506 - __main__ - WARNING - Error scanning port 5900: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,506 - __main__ - WARNING - Error scanning port 8080: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,506 - __main__ - WARNING - Error scanning port 8443: [Errno 11001] getaddrinfo failed
+2025-10-27 07:12:31,506 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:12:31] "POST /api/tools/port-scan HTTP/1.1" 200 -
+2025-10-27 07:12:36,264 - __main__ - INFO - GET https://course.acciojob.com/ - 200
+2025-10-27 07:12:36,269 - werkzeug - INFO - 127.0.0.1 - - [27/Oct/2025 07:12:36] "GET /api/tech-detect?url=https://course.acciojob.com/ HTTP/1.1" 200 -

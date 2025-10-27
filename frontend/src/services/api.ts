@@ -1,7 +1,9 @@
 import axios, { AxiosResponse, AxiosRequestConfig } from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://albus-recon-intern-project-backend.onrender.com';
 const API_BASE = `${API_URL}/api`;
+
+console.log('Using API base URL:', API_BASE);
 
 // API response types
 export interface SubdomainResult {
@@ -47,11 +49,11 @@ export interface ReconResult {
 // Create axios instance
 const api = axios.create({
   baseURL: API_BASE,
+  withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
-    'Accept': 'application/json',
+    'Accept': 'application/json'
   },
-  withCredentials: true,
   timeout: 30000, // 30 seconds timeout
 });
 
@@ -180,16 +182,5 @@ export const reconApi = {
       console.error('Error scanning ports:', error);
       return [];
     }
-  },
-
-  // Export to CSV
-  exportToCsv: async (): Promise<Blob> => {
-    const response = await api.get('/export/csv', { 
-      responseType: 'blob',
-      headers: {
-        'Accept': 'text/csv',
-      }
-    });
-    return response.data;
-  },
+  }
 };
