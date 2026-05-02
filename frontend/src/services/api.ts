@@ -1,6 +1,6 @@
 import axios, { AxiosResponse, AxiosRequestConfig } from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://albus-recon-intern-project-backend.onrender.com';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 const API_BASE = `${API_URL}/api`;
 
 console.log('Using API base URL:', API_BASE);
@@ -46,6 +46,20 @@ export interface ReconResult {
   recommendation?: string;
 }
 
+export interface User {
+  id: number;
+  username: string;
+  email: string;
+  is_active: boolean;
+  is_superuser: boolean;
+  role: string;
+}
+
+export interface LoginResponse {
+  access_token: string;
+  token_type: string;
+}
+
 // Create axios instance
 const api = axios.create({
   baseURL: API_BASE,
@@ -60,6 +74,10 @@ const api = axios.create({
 // Request interceptor
 api.interceptors.request.use(
   (config) => {
+    const token = localStorage.getItem('token');
+    if (token && config.headers) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
     console.log(`Request: ${config.method?.toUpperCase()} ${config.url}`, config.params || '');
     return config;
   },
@@ -79,6 +97,13 @@ api.interceptors.response.use(
     if (error.response) {
       // The request was made and the server responded with a status code
       console.error('Response Error:', error.response.status, error.response.data);
+      if (error.response.status === 401) {
+        // Handle unauthorized access globally
+        if (window.location.pathname !== '/login' && window.location.pathname !== '/register') {
+          localStorage.removeItem('token');
+          window.location.href = '/login';
+        }
+      }
     } else if (error.request) {
       // The request was made but no response was received
       console.error('No Response:', error.request);
@@ -182,5 +207,35 @@ export const reconApi = {
       console.error('Error scanning ports:', error);
       return [];
     }
+  }
+};
+
+export const authApi = {
+  login: async (credentials: any): Promise<LoginResponse> => {
+    const formData = new FormData();
+    formData.append('username', credentials.username);
+    formData.append('password', credentials.password);
+    
+    // FastAPI OAuth2PasswordRequestForm expects form data, not JSON
+    const response = await api.post('/auth/login', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+    return response.data;
+  },
+  
+  register: async (userData: any): Promise<User> => {
+    const response = await api.post('/auth/register', userData);
+    return response.data;
+  },
+  
+  getMe: async (token: string): Promise<User> => {
+    const response = await api.get('/auth/me', {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return response.data;
   }
 };
