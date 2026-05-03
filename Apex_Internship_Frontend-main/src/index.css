@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url('https://fonts.google.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sora: "Orbitron", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-gray-50 text-gray-900 text-base;
+  }
+}
+
+@font-face {
+  font-family: "PPSupplyMono";
+  src: url("https://assets.codepen.io/7558/PPSupplyMono-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.rotate-45 {
+  @apply rotate-[45deg]
+}
+
+.rotate-90 {
+  @apply rotate-[90deg]
+}
+
+.rotate-135 {
+  @apply rotate-[135deg]
+}
+
+.rotate-180 {
+  @apply rotate-[180deg]
+}
+
+.rotate-225 {
+  @apply rotate-[225deg]
+}
+
+.rotate-270 {
+  @apply rotate-[270deg]
+}
+
+.rotate-315 {
+  @apply rotate-[315deg]
+}
+
+.rotate-360 {
+  @apply rotate-[360deg]
+}
+
+.-rotate-45 {
+  @apply rotate-[-45deg]
+}
+
+.-rotate-90 {
+  @apply rotate-[-90deg]
+}
+
+.-rotate-135 {
+  @apply rotate-[-135deg]
+}
+
+.-rotate-180 {
+  @apply rotate-[-180deg]
+}
+
+.-rotate-225 {
+  @apply rotate-[-225deg]
+}
+
+.-rotate-270 {
+  @apply rotate-[-270deg]
+}
+
+.-rotate-315 {
+  @apply rotate-[-315deg]
+}
+
+.-rotate-360 {
+  @apply rotate-[-360deg]
+}
+
+/* --- HARMONIC FLOW ANIMATIONS --- */
+
+/* 1. Gentle Float Loop (Keeps logo alive) */
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float-gentle {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+/* 2. Data Stream Bar */
+@keyframes data-stream {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+.animate-data-stream {
+  background-size: 200% 100%;
+  animation: data-stream 2s linear infinite;
+}
+
+/* 3. Background Pulse */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.2); }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* 4. Footer Ping */
+.animate-ping-slow {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

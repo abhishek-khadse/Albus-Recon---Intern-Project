@@ -1,0 +1,40 @@
+{
+  "id": "course-1",
+  "title": "Master Bug Bounty & Ethical Hacking",
+  "description": "Learn real-world vulnerability hunting and offensive security skills.",
+  "thumbnail_url": null,
+  "duration": "4 hours",
+  "difficulty": "Intermediate",
+  "is_locked": false,
+  "upgrade_required": false,
+  "hasAccess": true,
+  "instructor": {
+    "name": "Security Expert",
+    "title": "Senior Security Engineer"
+  },
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Bug Bounty Fundamentals",
+      "duration": "45 minutes",
+      "lessons": 5
+    },
+    {
+      "id": "module-2", 
+      "title": "Vulnerability Hunting Techniques",
+      "duration": "90 minutes",
+      "lessons": 8
+    },
+    {
+      "id": "module-3",
+      "title": "Ethical Hacking Tools & Methods",
+      "duration": "105 minutes",
+      "lessons": 10
+    }
+  ],
+  "stats": {
+    "total_students": 1250,
+    "average_rating": 4.8,
+    "completion_rate": 85
+  }
+}
